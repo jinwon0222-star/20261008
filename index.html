@@ -1,0 +1,1920 @@
+<!doctype html>
+<html lang="ko" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고양시 시니어 AI 숏폼 크리에이터 디렉터 | 100세 시대 상생 프로젝트</title>
+    <meta name="description" content="5070 시니어의 풍부한 경험에 AI 기술을 더해 고양시 골목상권과 일자리를 살리는 맞춤형 숏폼 마케팅 프로젝트" />
+    <meta property="og:title" content="고양시 시니어 AI 숏폼 크리에이터 디렉터" />
+    <meta property="og:description" content="5070 시니어의 풍부한 경험에 AI 기술을 더해 고양시 골목상권과 일자리를 살리는 맞춤형 숏폼 마케팅 프로젝트" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Web Fonts: Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Tailwind CSS CDN with Custom Theme Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandDark: '#0F172A',
+              brandDarker: '#070B14',
+              brandNavy: '#0B1120',
+              neonAmber: '#F59E0B',
+              neonAmberHover: '#D97706',
+              deepBlue: '#2563EB',
+              deepBlueHover: '#1D4ED8'
+            },
+            fontFamily: {
+              sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        background-color: #0F172A;
+        color: #F8FAFC;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0F172A;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #F59E0B;
+      }
+      .glow-amber {
+        box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.3);
+      }
+      .glow-blue {
+        box-shadow: 0 0 35px -5px rgba(37, 99, 235, 0.25);
+      }
+    </style>
+  </head>
+  <body class="bg-[#0F172A] text-slate-100 antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- 1. HEADER & NAVIGATION -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-gradient-to-b from-[#0F172A]/90 to-transparent border-b border-transparent">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="h-16 md:h-20 flex items-center justify-between gap-4">
+          <!-- Zone 1: Brand Wordmark -->
+          <a href="#" class="flex items-center gap-2.5 text-lg md:text-xl font-bold tracking-tight text-white hover:text-amber-400 transition-colors whitespace-nowrap">
+            <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center text-slate-950 font-black text-sm shadow-md shadow-amber-500/20">
+              AI
+            </span>
+            <span>고양시 시니어 AI 숏폼 디렉터</span>
+          </a>
+
+          <!-- Zone 2: Navigation Links -->
+          <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+            <a href="#problem" class="hover:text-amber-400 transition-colors py-1">문제</a>
+            <a href="#solution" class="hover:text-amber-400 transition-colors py-1">솔루션</a>
+            <a href="#benefits" class="hover:text-amber-400 transition-colors py-1">혜택</a>
+            <a href="#trust" class="hover:text-amber-400 transition-colors py-1">신뢰</a>
+            <a href="#pricing" class="hover:text-amber-400 transition-colors py-1">가격</a>
+            <a href="#contact" class="hover:text-amber-400 transition-colors py-1">문의</a>
+            <a href="#apply" class="hover:text-amber-400 transition-colors py-1">신청</a>
+          </nav>
+
+          <!-- Zone 3: Direct Actions -->
+          <div class="hidden sm:flex items-center gap-3">
+            <button onclick="openApplyModal('store')" class="px-3.5 py-2 text-xs md:text-sm font-medium text-slate-200 border border-slate-700 bg-slate-800/60 hover:bg-slate-700/80 hover:text-white rounded-lg transition-colors whitespace-nowrap cursor-pointer">
+              소상공인 무료 상담
+            </button>
+            <button onclick="openApplyModal('senior')" class="px-4 py-2 text-xs md:text-sm font-semibold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-lg shadow-sm shadow-amber-500/30 transition-all transform active:scale-95 whitespace-nowrap flex items-center gap-1.5 cursor-pointer">
+              <span>1기 지원하기</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- Mobile Hamburger -->
+          <div class="flex sm:hidden items-center">
+            <button id="mobile-menu-btn" class="p-2 text-slate-300 hover:text-white rounded-md" aria-label="메뉴 열기">
+              <svg id="hamburger-icon" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden sm:hidden bg-[#0F172A]/95 border-b border-slate-800 px-4 pt-3 pb-6 backdrop-blur-xl">
+        <nav class="flex flex-col space-y-3 pb-4 border-b border-slate-800 text-sm font-medium">
+          <a href="#problem" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">문제</a>
+          <a href="#solution" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">솔루션</a>
+          <a href="#benefits" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">혜택</a>
+          <a href="#trust" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">신뢰</a>
+          <a href="#pricing" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">가격</a>
+          <a href="#contact" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">문의</a>
+          <a href="#apply" class="mobile-nav-link text-slate-200 hover:text-amber-400 py-1">신청</a>
+        </nav>
+        <div class="pt-4 flex flex-col gap-2">
+          <button onclick="openApplyModal('senior')" class="w-full py-2.5 text-center text-sm font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-lg shadow-sm">
+            시니어 1기 크리에이터 지원하기
+          </button>
+          <button onclick="openApplyModal('store')" class="w-full py-2.5 text-center text-sm font-medium text-slate-200 border border-slate-700 bg-slate-800/80 rounded-lg">
+            소상공인 숏폼 마케팅 무료 상담
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 overflow-hidden">
+      <!-- Background Image with Deep Scrim -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/assets/images/hero_senior_creator_1791440400813.jpg"
+          onerror="this.src='/src/assets/images/hero_senior_creator_1791440400813.jpg'"
+          alt="고양시 시니어 AI 숏폼 크리에이터 실무 디렉팅 현장"
+          class="w-full h-full object-cover object-center filter brightness-[0.42] contrast-[1.1]"
+          referrerpolicy="no-referrer"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/70 to-[#0F172A]/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-transparent to-[#0F172A]/80"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div class="absolute bottom-1/3 left-1/3 w-[400px] h-[250px] bg-amber-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+        <!-- Live Quota Ticker -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-amber-500/30 text-xs text-amber-300 font-medium mb-6 shadow-lg shadow-black/40 backdrop-blur-sm">
+          <svg class="w-3.5 h-3.5 text-amber-400 animate-pulse" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c1.1 0 2 .9 2 2 0 .7-.4 1.4-1 1.7V7c2.8 0 5 2.2 5 5 0 2.2-1.4 4-3.4 4.7-.3.1-.6.3-.6.6 0 .4.3.7.7.7 2.8 0 5-2.2 5-5 0-3.9-3.1-7-7-7-1.1 0-2 .9-2 2z"/></svg>
+          <span>고양시 1기 특별 선발 진행 중</span>
+          <span class="text-slate-500">|</span>
+          <span class="text-slate-300 font-normal">선착순 정원 마감 임박 (지원금 100% 전액지원)</span>
+        </div>
+
+        <!-- Top Kicker (Benchmarking Sangsangin 'BEYOND IMAGINATION') -->
+        <p class="text-xs md:text-sm font-semibold tracking-[0.25em] text-blue-400 uppercase mb-3">
+          Beyond Generation · Local AI Synergy
+        </p>
+
+        <!-- Main Display Headline -->
+        <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6 max-w-4xl text-balance">
+          100세 시대, <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">AI를 만난 시니어</span>가<br />
+          지역 상권을 살립니다!
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-base sm:text-lg md:text-xl text-slate-300 max-w-3xl leading-relaxed mb-8 font-normal">
+          <strong class="text-white font-semibold">5070 시니어의 풍부한 경험</strong>에 <strong class="text-amber-400 font-semibold">AI 기술</strong>을 더하다 —<br class="hidden sm:inline" />
+          고양시 골목상권과 시니어 일자리를 동시에 바꾸는 맞춤형 숏폼 마케팅 디렉팅
+        </p>
+
+        <!-- Quotation Dual Callouts -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 max-w-3xl w-full mb-10 text-left">
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 backdrop-blur-md hover:border-amber-500/40 transition-colors">
+            <div class="flex items-center gap-2 mb-1.5 text-xs font-semibold text-amber-400">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+              <span>5070 시니어 수강생</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 font-medium leading-relaxed">
+              &ldquo;AI 활용법을 배워 내 손으로 지역 매장을 홍보하고 지속 가능한 수익을 만드세요!&rdquo;
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 backdrop-blur-md hover:border-blue-500/40 transition-colors">
+            <div class="flex items-center gap-2 mb-1.5 text-xs font-semibold text-blue-400">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><circle cx="12" cy="12" r="2"/></svg>
+              <span>고양시 소상공인 사장님</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-200 font-medium leading-relaxed">
+              &ldquo;마케팅 예산이 부족한 사장님, 전문 AI 숏폼 크리에이터가 매출을 올려드립니다!&rdquo;
+            </p>
+          </div>
+        </div>
+
+        <!-- Primary CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+          <button onclick="openApplyModal('senior')" class="w-full sm:w-auto px-7 py-4 text-sm sm:text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 rounded-xl shadow-lg shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group cursor-pointer">
+            <span>지금 1기 지원하기 (선착순 전액무료)</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+
+          <button onclick="openApplyModal('store')" class="w-full sm:w-auto px-7 py-4 text-sm sm:text-base font-semibold text-white bg-blue-600/90 hover:bg-blue-500 border border-blue-500/30 rounded-xl shadow-lg shadow-blue-600/20 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4 text-amber-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+            <span>소상공인 숏폼 무료 상담</span>
+          </button>
+        </div>
+
+        <!-- Sangsangin-benchmarked Scroll Cue -->
+        <div class="mt-14 flex flex-col items-center gap-2 text-slate-400 text-xs">
+          <div class="w-6 h-10 rounded-full border-2 border-slate-600/80 flex items-start justify-center p-1.5">
+            <div class="w-1.5 h-2.5 rounded-full bg-amber-400 animate-bounce"></div>
+          </div>
+          <span class="tracking-wider uppercase text-[11px] font-medium text-slate-400">Scroll</span>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 3. PROBLEM DEFINITION -->
+    <section id="problem" class="py-24 bg-[#0F172A] border-t border-slate-800/80 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-400 uppercase tracking-wider mb-2">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+            <span>Problem Identification</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+            우리는 지금 두 가지 지역 과제에 직면해 있습니다
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+            초고령 사회 진입과 골목상권 침체라는 개별적인 난제를 하나로 연결했을 때 비로소 해답이 보입니다.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          <!-- Problem 1: Senior -->
+          <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 sm:p-8 relative overflow-hidden group hover:border-slate-700 transition-all shadow-xl shadow-black/20">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-bl-full pointer-events-none"></div>
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-xs font-bold text-amber-400 tracking-wider uppercase">과제 01 · 시니어 일자리</span>
+              <span class="text-xs text-slate-500 font-mono">5070 SENIOR CHALLENGE</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">
+              시니어의 고민: &ldquo;경험은 풍부한데 일자리가 없습니다&rdquo;
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              정년 이후에도 신체적·지적으로 충분히 일할 수 있지만, 단순 노무직 외에는 평생 축적한 전문성을 살릴 수 있는 디지털 일자리가 턱없이 부족합니다. 생성형 AI가 대세라지만 높은 기술 진입장벽 때문에 엄두를 내지 못하고 있습니다.
+            </p>
+            <div class="space-y-3 pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+              <div class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-rose-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"></polyline><polyline points="17 18 23 18 23 12"></polyline></svg>
+                <span>퇴직 후 경력 단절 및 단순 노무 일자리 편중</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-amber-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                <span>체계적인 실무 중심 AI 교육 기회의 부족</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem 2: Small Business -->
+          <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 sm:p-8 relative overflow-hidden group hover:border-slate-700 transition-all shadow-xl shadow-black/20">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/5 rounded-bl-full pointer-events-none"></div>
+            <div class="flex items-center justify-between mb-5">
+              <span class="text-xs font-bold text-blue-400 tracking-wider uppercase">과제 02 · 골목상권 마케팅</span>
+              <span class="text-xs text-slate-500 font-mono">LOCAL BUSINESS CRISIS</span>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-3">
+              소상공인의 고민: &ldquo;숏폼 홍보가 절실하지만 방법이 없습니다&rdquo;
+            </h3>
+            <p class="text-sm text-slate-300 leading-relaxed mb-6">
+              인스타그램 릴스·유튜브 쇼츠 등 숏폼 마케팅이 가게 생존을 가른다는 것은 잘 알지만, 외주 마케팅 대행사의 높은 비용(월 수백만 원)과 매장 운영에 쫓겨 직접 영상을 기획하고 촬영할 시간이 턱없이 부족합니다.
+            </p>
+            <div class="space-y-3 pt-4 border-t border-slate-800/80 text-xs text-slate-400">
+              <div class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-rose-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span>1인 운영 및 인력 부족으로 마케팅 엄두 불가</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span>고가의 일회성 외주 대행비 부담과 효과 불확실성</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Central Insight Banner -->
+        <div class="relative rounded-2xl bg-gradient-to-r from-blue-950/80 via-slate-900 to-amber-950/80 border border-slate-700/80 p-6 sm:p-8 text-center shadow-2xl overflow-hidden">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <svg class="w-5 h-5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
+            <span class="text-xs font-bold text-amber-300 tracking-wider uppercase">상생 혁신 인사이트</span>
+          </div>
+          <blockquote class="text-lg sm:text-2xl font-bold text-white mb-2 leading-snug">
+            &ldquo;따로 풀면 어렵지만, 함께 묶으면 가장 강력한 상생 솔루션이 됩니다.&rdquo;
+          </blockquote>
+          <p class="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto">
+            시니어의 풍부한 공감능력과 인생 경험에 AI 도구를 쥐여주면, 골목 소상공인에게 가장 든든하고 진정성 있는 전담 마케팅 디렉터가 탄생합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 4. SOLUTION & VALUE PROPOSITION -->
+    <section id="solution" class="py-24 bg-[#0B1120] relative overflow-hidden">
+      <div class="absolute top-1/2 left-0 w-96 h-96 bg-blue-600/5 blur-[120px] rounded-full pointer-events-none"></div>
+      <div class="absolute bottom-10 right-0 w-96 h-96 bg-amber-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold text-blue-400 uppercase tracking-widest">
+            Solution & Value Proposition
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight mt-2 mb-4">
+            &lsquo;시니어 AI 숏폼 크리에이터 디렉터&rsquo;의 3단계 솔루션
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            교육에서 공간 혁신, 현장 매칭까지 원스톱으로 이어지는 고양시 맞춤형 지역 정주형 생태계입니다.
+          </p>
+        </div>
+
+        <!-- Benchmarking Sangsangin Connected Ribbon / Pathway Flow -->
+        <div class="relative mb-16">
+          <div class="hidden md:block absolute top-1/2 left-10 right-10 -translate-y-1/2 h-1 bg-gradient-to-r from-amber-500/40 via-blue-500/40 to-emerald-500/40 rounded-full z-0"></div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+            <!-- Pillar 1 Button -->
+            <button onclick="selectPillar('toolkit')" id="pillar-btn-toolkit" class="pillar-btn text-left p-6 sm:p-7 rounded-xl border transition-all duration-300 cursor-pointer flex flex-col justify-between bg-slate-900 border-amber-400/80 shadow-xl shadow-amber-500/10 -translate-y-1">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 text-amber-400">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 14h3"/><path d="M1 9h3"/><path d="M1 14h3"/></svg>
+                  </div>
+                  <span class="text-2xl font-black text-slate-600 font-mono">01</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1.5">쉬운 Easy-AI 툴킷 기반 교육</h3>
+                <p class="text-xs text-amber-400 font-medium mb-3">1시간 만에 완성하는 실전 숏폼 영상</p>
+                <p class="text-xs sm:text-sm text-slate-300 line-clamp-3 leading-relaxed">
+                  복잡한 코딩이나 전문 영상 편집 기술이 없어도 Sora, HeyGen, CapCut AI 등 검증된 도구를 활용해 1시간 만에 고품질 숏폼을 제작합니다.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between">
+                <span class="text-xs text-slate-400 font-medium">시니어 맞춤형 대화형 실습</span>
+                <span class="text-xs font-semibold text-amber-400 flex items-center gap-1">
+                  <span>자세히 보기</span>
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </button>
+
+            <!-- Pillar 2 Button -->
+            <button onclick="selectPillar('studio')" id="pillar-btn-studio" class="pillar-btn text-left p-6 sm:p-7 rounded-xl border transition-all duration-300 cursor-pointer flex flex-col justify-between bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 text-blue-400">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+                  </div>
+                  <span class="text-2xl font-black text-slate-600 font-mono">02</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1.5">지역 공실 점포의 크리에이터 거점화</h3>
+                <p class="text-xs text-amber-400 font-medium mb-3">방치된 도심 공실을 창작 스튜디오로</p>
+                <p class="text-xs sm:text-sm text-slate-300 line-clamp-3 leading-relaxed">
+                  고양시 내 유휴 공실 점포를 시니어 AI 크리에이터의 촬영·편집 스튜디오이자 소상공인 팝업 마케팅 소통 거점으로 리브랜딩합니다.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between">
+                <span class="text-xs text-slate-400 font-medium">고양시 도심 상권 앵커 거점</span>
+                <span class="text-xs font-semibold text-slate-500 flex items-center gap-1">
+                  <span>자세히 보기</span>
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </button>
+
+            <!-- Pillar 3 Button -->
+            <button onclick="selectPillar('matching')" id="pillar-btn-matching" class="pillar-btn text-left p-6 sm:p-7 rounded-xl border transition-all duration-300 cursor-pointer flex flex-col justify-between bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90">
+              <div>
+                <div class="flex items-center justify-between mb-4">
+                  <div class="w-12 h-12 rounded-lg bg-slate-800 flex items-center justify-center border border-slate-700 text-emerald-400">
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <span class="text-2xl font-black text-slate-600 font-mono">03</span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1.5">1:1 상권 맞춤형 매칭 및 디렉팅</h3>
+                <p class="text-xs text-amber-400 font-medium mb-3">실제 매출 견인으로 이어지는 실전 프로젝트</p>
+                <p class="text-xs sm:text-sm text-slate-300 line-clamp-3 leading-relaxed">
+                  소상공인 매장과 시니어 크리에이터를 1:1로 직접 연결하여 매장의 진정성 있는 스토리를 담은 바이럴 숏폼을 제작하고 매출을 견인합니다.
+                </p>
+              </div>
+              <div class="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between">
+                <span class="text-xs text-slate-400 font-medium">매출 상승과 자립 일자리 동시 창출</span>
+                <span class="text-xs font-semibold text-slate-500 flex items-center gap-1">
+                  <span>자세히 보기</span>
+                  <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Pillar Detail Container -->
+        <div class="rounded-2xl bg-slate-900/90 border border-slate-800 p-6 sm:p-10 shadow-2xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <div class="inline-flex items-center gap-2 text-xs font-bold text-amber-400 bg-amber-500/10 px-3 py-1 rounded-md border border-amber-500/20">
+                <span id="pillar-badge">핵심 구현 프로세스 01</span>
+              </div>
+              <h4 id="pillar-detail-title" class="text-xl sm:text-2xl font-extrabold text-white">
+                쉬운 Easy-AI 툴킷 기반 교육
+              </h4>
+              <p id="pillar-detail-desc" class="text-sm sm:text-base text-slate-300 leading-relaxed">
+                복잡한 코딩이나 전문 영상 편집 기술이 없어도 Sora, HeyGen, CapCut AI 등 검증된 최신 AI 도구를 활용해 5070 누구나 1시간 만에 감각적인 고품질 숏폼을 제작할 수 있도록 밀착 교육합니다.
+              </p>
+              <div class="space-y-2.5 pt-2">
+                <h5 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">주요 특징 & 교육 커리큘럼</h5>
+                <div id="pillar-tags" class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm text-slate-200">
+                  <div class="flex items-center gap-2"><svg class="w-4 h-4 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>프롬프트 엔지니어링</span></div>
+                  <div class="flex items-center gap-2"><svg class="w-4 h-4 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>AI 아바타·보이스 생성</span></div>
+                  <div class="flex items-center gap-2"><svg class="w-4 h-4 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>숏폼 템플릿 자동화</span></div>
+                </div>
+              </div>
+              <div class="pt-2">
+                <h5 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">활용 AI & 실전 인프라 도구</h5>
+                <div id="pillar-tools" class="flex flex-wrap gap-2">
+                  <span class="text-xs px-2.5 py-1 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono">OpenAI Sora</span>
+                  <span class="text-xs px-2.5 py-1 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono">HeyGen</span>
+                  <span class="text-xs px-2.5 py-1 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono">CapCut AI</span>
+                  <span class="text-xs px-2.5 py-1 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono">ElevenLabs</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Media Preview -->
+            <div class="lg:col-span-5">
+              <div class="relative rounded-xl overflow-hidden border border-slate-700/80 shadow-lg group">
+                <img
+                  src="/assets/images/studio_creative_hub_1791440414853.jpg"
+                  onerror="this.src='/src/assets/images/studio_creative_hub_1791440414853.jpg'"
+                  alt="고양시 시니어 AI 크리에이터 창작 거점 스튜디오 전경"
+                  class="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                  <div class="text-white text-xs">
+                    <p class="font-semibold text-amber-300">고양시 창작 스튜디오 거점 1호</p>
+                    <p class="text-slate-300 text-[11px]">시니어 크리에이터와 소상공인이 함께 기획하고 촬영하는 공간</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 5. SOCIAL VALUE & CSV BANNER -->
+    <section class="relative py-28 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/assets/images/social_impact_synergy_1791440432580.jpg"
+          onerror="this.src='/src/assets/images/social_impact_synergy_1791440432580.jpg'"
+          alt="시니어와 골목상권 소상공인의 따뜻한 상생과 동행"
+          class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-[1.15]"
+          referrerpolicy="no-referrer"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/70 to-[#0F172A]"></div>
+        <div class="absolute inset-0 bg-blue-950/40 mix-blend-multiply"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-semibold mb-6">
+          <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <span>SOCIAL VALUE & CSV SYNERGY</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6 text-balance">
+          개인과 공동체, 그리고 골목을 이롭게 하며<br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200">
+            사회와의 지속 가능한 동행
+          </span>을 추구합니다
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12 font-normal">
+          시니어의 축적된 삶의 지혜와 온기는 어떤 AI도 대신할 수 없는 가장 소중한 마케팅 자산입니다. 기술 소외를 넘어 지역 경제의 당당한 주역으로, 고양시가 새로운 미래를 함께 엽니다.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto pt-6 border-t border-slate-700/60">
+          <div class="text-center">
+            <div class="text-3xl sm:text-4xl font-black text-amber-400 font-mono tracking-tight tabular-nums">
+              80%+
+            </div>
+            <p class="text-xs text-slate-300 mt-1 font-medium">기존 마케팅 외주비 절감</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl sm:text-4xl font-black text-white font-mono tracking-tight tabular-nums">
+              1시간
+            </div>
+            <p class="text-xs text-slate-300 mt-1 font-medium">Easy-AI 기반 제작 완주</p>
+          </div>
+          <div class="text-center">
+            <div class="text-3xl sm:text-4xl font-black text-blue-400 font-mono tracking-tight tabular-nums">
+              1:1
+            </div>
+            <p class="text-xs text-slate-300 mt-1 font-medium">골목 매장 맞춤 전담 매칭</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 6. KEY FEATURES & BENEFITS -->
+    <section id="benefits" class="py-24 bg-[#0F172A] border-t border-slate-800/80 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest">
+            Key Features & Benefits
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight mt-2 mb-4">
+            참여 대상별 제공 혜택 3가지
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            시니어와 소상공인 모두에게 즉각적이고 지속 가능한 변화를 약속합니다.
+          </p>
+
+          <!-- Audience Switcher -->
+          <div class="mt-8 inline-flex p-1.5 rounded-xl bg-slate-900 border border-slate-800">
+            <button onclick="switchBenefitTab('senior')" id="tab-btn-senior" class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-amber-400 text-slate-950 shadow-md shadow-amber-500/20 cursor-pointer">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+              <span>5070 시니어 수강생</span>
+            </button>
+            <button onclick="switchBenefitTab('store')" id="tab-btn-store" class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 text-slate-400 hover:text-white cursor-pointer">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></svg>
+              <span>고양시 소상공인 사장님</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Senior Benefits View -->
+        <div id="benefit-view-senior" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 flex flex-col justify-between hover:border-amber-400/50 transition-all shadow-xl">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold flex items-center justify-center mb-5 text-sm font-mono">01</div>
+                <h3 class="text-lg font-bold text-white mb-2">디지털 역량 강화</h3>
+                <p class="text-xs sm:text-sm text-amber-300 font-medium mb-3">실무 중심의 AI 프롬프트 작성법 및 숏폼 제작 기술 습득</p>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">Sora, HeyGen, CapCut AI 등 최신 생성형 툴을 직접 다루며 스마트 기기 활용 자신감을 획득합니다.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>실전 1:1 디렉팅 포함</span>
+              </div>
+            </div>
+
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 flex flex-col justify-between hover:border-amber-400/50 transition-all shadow-xl">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold flex items-center justify-center mb-5 text-sm font-mono">02</div>
+                <h3 class="text-lg font-bold text-white mb-2">지속 가능한 일자리</h3>
+                <p class="text-xs sm:text-sm text-amber-300 font-medium mb-3">단순 교육 이수에서 끝나지 않고 지역 상권 마케터로 활동하며 수익 창출</p>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">수료 즉시 고양시 소상공인 매장과 매칭되어 편당 제작료 및 지속적인 마케팅 디렉팅 수익을 창출합니다.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>실전 1:1 디렉팅 포함</span>
+              </div>
+            </div>
+
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 flex flex-col justify-between hover:border-amber-400/50 transition-all shadow-xl">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 font-bold flex items-center justify-center mb-5 text-sm font-mono">03</div>
+                <h3 class="text-lg font-bold text-white mb-2">사회적 가치 실현</h3>
+                <p class="text-xs sm:text-sm text-amber-300 font-medium mb-3">내 지역 가게를 직접 홍보하며 느끼는 성취감과 자존감 회복</p>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">지역 이웃의 매장 매출을 살리며 지역사회의 존경받는 디지털 리더로 자리매김합니다.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>실전 1:1 디렉팅 포함</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-xl bg-gradient-to-r from-amber-950/40 to-slate-900 border border-amber-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p class="text-sm font-bold text-white">시니어 1기 크리에이터 과정 정원 선착순 마감 임박</p>
+              <p class="text-xs text-slate-300">정부 및 지자체 지원 적용으로 1기 참가비 전액 무료</p>
+            </div>
+            <button onclick="openApplyModal('senior')" class="px-6 py-2.5 text-xs sm:text-sm font-bold text-slate-950 bg-amber-400 hover:bg-amber-300 rounded-lg transition-colors whitespace-nowrap shadow-md shadow-amber-500/20 flex items-center gap-1.5 cursor-pointer">
+              <span>1기 수강 지원하기</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Store Benefits View -->
+        <div id="benefit-view-store" class="hidden space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 flex flex-col justify-between hover:border-blue-400/50 transition-all shadow-xl">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 font-bold flex items-center justify-center mb-5 text-sm font-mono">01</div>
+                <h3 class="text-lg font-bold text-white mb-2">마케팅 비용 절감</h3>
+                <p class="text-xs sm:text-sm text-blue-300 font-medium mb-3">기존 대행사 대비 80% 이상 절감된 비용으로 맞춤형 숏폼 제작</p>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">월 수백만 원에 달하는 광고 대행사 비용 부담 없이 합리적인 정부 지원 연계 혜택으로 영상을 확보합니다.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>상권 분석 리포트 제공</span>
+              </div>
+            </div>
+
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 flex flex-col justify-between hover:border-blue-400/50 transition-all shadow-xl">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 font-bold flex items-center justify-center mb-5 text-sm font-mono">02</div>
+                <h3 class="text-lg font-bold text-white mb-2">상권 특화 콘텐츠</h3>
+                <p class="text-xs sm:text-sm text-blue-300 font-medium mb-3">매장의 스토리와 진정성을 살린 밀착형 바이럴 영상 확보</p>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">천편일률적인 공장형 광고가 아닌, 시니어 디렉터의 온기와 사장님의 인생 스토리를 담은 진정성 있는 릴스를 제작합니다.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>상권 분석 리포트 제공</span>
+              </div>
+            </div>
+
+            <div class="rounded-xl bg-slate-900/90 border border-slate-800 p-7 flex flex-col justify-between hover:border-blue-400/50 transition-all shadow-xl">
+              <div>
+                <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 font-bold flex items-center justify-center mb-5 text-sm font-mono">03</div>
+                <h3 class="text-lg font-bold text-white mb-2">매출 증대 효과</h3>
+                <p class="text-xs sm:text-sm text-blue-300 font-medium mb-3">SNS 인지도 상승 및 팝업 프로젝트를 통한 신규 고객 유입</p>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">인스타그램·유튜브 쇼츠 지역 타깃 노출로 MZ세대 및 인근 주민의 실질적인 오프라인 매장 방문을 견인합니다.</p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center gap-1.5">
+                <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>상권 분석 리포트 제공</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-xl bg-gradient-to-r from-blue-950/40 to-slate-900 border border-blue-500/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <p class="text-sm font-bold text-white">골목 소상공인 숏폼 3편 시범 무료 제작</p>
+              <p class="text-xs text-slate-300">베타 테스트 기간 중 고양시 관내 매장 5곳 한정 시범 무상 매칭</p>
+            </div>
+            <button onclick="openApplyModal('store')" class="px-6 py-2.5 text-xs sm:text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-lg transition-colors whitespace-nowrap shadow-md shadow-blue-600/30 flex items-center gap-1.5 cursor-pointer">
+              <span>소상공인 무료 상담</span>
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 7. SHOWCASE & VIRAL SHORT-FORM IMPACT -->
+    <section class="py-24 bg-[#0B1120] border-t border-slate-800/80 relative overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest">
+              Showcase & Local Impact
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+              이로운 변화를 만드는<br />
+              시니어 AI 숏폼의 실전 성과
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+              기획부터 AI 영상 생성, 1:1 매칭 인터뷰까지 시니어 디렉터가 손수 제작하여 지역 골목상권에 폭발적인 바이럴과 매출을 가져온 검증된 사례들입니다.
+            </p>
+
+            <!-- Case selector items -->
+            <div class="space-y-3 pt-4">
+              <button onclick="selectCase(0)" id="case-btn-0" class="case-btn w-full text-left p-3.5 rounded-lg border transition-all cursor-pointer flex items-center justify-between bg-slate-900 border-amber-400/80 text-white shadow-md">
+                <div class="truncate pr-2">
+                  <p class="text-xs font-semibold text-amber-300">밤리단길 아틀리에 베이커리</p>
+                  <p class="text-xs text-slate-300 truncate">30년 제빵 장인의 새벽 4시 효모 발효 이야기</p>
+                </div>
+                <span class="text-xs font-mono text-slate-400 shrink-0">482,500 views</span>
+              </button>
+
+              <button onclick="selectCase(1)" id="case-btn-1" class="case-btn w-full text-left p-3.5 rounded-lg border transition-all cursor-pointer flex items-center justify-between bg-slate-900/40 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700">
+                <div class="truncate pr-2">
+                  <p class="text-xs font-semibold text-amber-300">원당 전통 참기름 방앗간</p>
+                  <p class="text-xs text-slate-300 truncate">할머니의 40년 저온압착 참기름 고소한 비결 쇼츠</p>
+                </div>
+                <span class="text-xs font-mono text-slate-400 shrink-0">621,900 views</span>
+              </button>
+
+              <button onclick="selectCase(2)" id="case-btn-2" class="case-btn w-full text-left p-3.5 rounded-lg border transition-all cursor-pointer flex items-center justify-between bg-slate-900/40 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700">
+                <div class="truncate pr-2">
+                  <p class="text-xs font-semibold text-amber-300">화정 초록 플랜트 스튜디오</p>
+                  <p class="text-xs text-slate-300 truncate">아파트 베란다에서 죽지 않는 반려식물 3가지</p>
+                </div>
+                <span class="text-xs font-mono text-slate-400 shrink-0">295,400 views</span>
+              </button>
+            </div>
+
+            <div class="pt-2">
+              <button onclick="openVideoModal()" class="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs sm:text-sm shadow-md shadow-amber-500/20 transition-all cursor-pointer">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>선택된 숏폼 영상 직접 재생하기</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+              <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+                <span id="case-counter" class="text-amber-400 font-bold">CASE 01</span>
+                <span>/</span>
+                <span>03</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="prevCase()" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors cursor-pointer" aria-label="이전 사례">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button onclick="nextCase()" class="p-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-colors cursor-pointer" aria-label="다음 사례">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Showcase Preview Box -->
+            <div class="rounded-2xl bg-slate-900/90 border border-slate-800 p-6 sm:p-8 shadow-2xl relative overflow-hidden group">
+              <div class="relative rounded-xl overflow-hidden mb-6 aspect-video max-h-72 border border-slate-700/60">
+                <img
+                  src="/assets/images/shortform_showcase_mockup_1791440463049.jpg"
+                  onerror="this.src='/src/assets/images/shortform_showcase_mockup_1791440463049.jpg'"
+                  alt="숏폼 제작 영상 미리보기"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  referrerpolicy="no-referrer"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/40 to-transparent flex flex-col justify-between p-4">
+                  <div class="flex justify-between items-start">
+                    <span id="showcase-category" class="text-[11px] px-2.5 py-1 rounded bg-black/60 text-amber-300 border border-amber-500/30 backdrop-blur-sm">
+                      식음료 / 베이커리
+                    </span>
+                    <span id="showcase-duration" class="text-[11px] px-2 py-0.5 rounded bg-black/60 text-white font-mono">
+                      0:45
+                    </span>
+                  </div>
+
+                  <div class="flex items-center justify-center">
+                    <button onclick="openVideoModal()" class="w-14 h-14 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 flex items-center justify-center shadow-lg shadow-amber-500/40 transition-transform transform group-hover:scale-110 active:scale-95 cursor-pointer" aria-label="영상 재생">
+                      <svg class="w-6 h-6 fill-current ml-1" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    </button>
+                  </div>
+
+                  <div class="flex items-center justify-between text-xs text-white">
+                    <span id="showcase-director" class="font-medium flex items-center gap-1.5">
+                      <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                      김명숙 디렉터 (62세) 디렉팅
+                    </span>
+                    <span id="showcase-views" class="flex items-center gap-1 font-mono text-slate-300">
+                      482,500회
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Case Details -->
+              <div class="space-y-3">
+                <div class="flex items-center gap-2 text-xs text-slate-400">
+                  <svg class="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <span id="showcase-location">고양시 일산동구 정발산동</span>
+                  <span>·</span>
+                  <span id="showcase-store" class="text-white font-medium">밤리단길 아틀리에 베이커리</span>
+                </div>
+
+                <h3 id="showcase-title" class="text-lg sm:text-xl font-bold text-white">
+                  30년 제빵 장인의 새벽 4시 효모 발효 이야기
+                </h3>
+
+                <div class="p-3.5 rounded-lg bg-slate-800/80 border border-slate-700/80">
+                  <div class="flex items-center gap-2 text-xs font-bold text-amber-400 mb-1">
+                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    <span id="showcase-metric">SNS 조회수 48.2만회 달성</span>
+                  </div>
+                  <p id="showcase-submetric" class="text-xs text-slate-300 font-medium">
+                    방문객 142% 증가 · 주말 조기 품절
+                  </p>
+                </div>
+
+                <blockquote id="showcase-quote" class="text-xs sm:text-sm text-slate-300 italic pt-1 border-l-2 border-amber-400 pl-3">
+                  &ldquo;대행사는 너무 비싸 포기했었는데, 시니어 선생님께서 우리 빵의 정성을 진심으로 담아주셔서 눈물이 났습니다.&rdquo;
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 8. TRUST & EVIDENCE -->
+    <section id="trust" class="py-24 bg-[#0F172A] border-t border-slate-800/80 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest">
+            Trust & Evidence
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight mt-2 mb-4">
+            검증된 교육 체계와 든든한 지역 파트너십
+          </h2>
+          <p className="text-sm sm:text-base text-slate-300 leading-relaxed">
+            단순 일회성 이벤트가 아닙니다. 공공기관, 상인회, 전문 교육기관이 유기적으로 결합된 고양시 지역 정주형 상생 인프라입니다.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+          <div class="p-7 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-5">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">검증된 MVP 선도 모델</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+              시니어 대상 AI 숏폼 제작 사전 파일럿 특강 및 고양시 관내 시범 홍보 프로젝트를 성공적으로 완주하며 평균 만족도 98.4점을 기록했습니다.
+            </p>
+            <div class="text-xs text-amber-400/90 font-medium flex items-center gap-1.5 pt-3 border-t border-slate-800">
+              <svg class="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>실전 커리큘럼 사전 검증 완료</span>
+            </div>
+          </div>
+
+          <div class="p-7 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-5">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">전문 인프라 보유</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+              시니어AI교육진흥원(SAPN) 네트워크와의 공식 연계로 시니어 학습자 눈높이에 맞춘 단계별 표준 교재와 프롬프트 템플릿을 지원합니다.
+            </p>
+            <div class="text-xs text-blue-400/90 font-medium flex items-center gap-1.5 pt-3 border-t border-slate-800">
+              <svg class="w-4 h-4 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>SAPN 공인 커리큘럼 연계</span>
+            </div>
+          </div>
+
+          <div class="p-7 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 transition-colors shadow-lg">
+            <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-5">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">지역 정주형 협력 체계</h3>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+              고양시 소상공인연합회, 골목상권 상인회, 노인복지관과의 긴밀한 민관 연계를 통해 배출된 인력이 곧바로 현장에 투입되는 일자리 선순환을 보장합니다.
+            </p>
+            <div class="text-xs text-emerald-400/90 font-medium flex items-center gap-1.5 pt-3 border-t border-slate-800">
+              <svg class="w-4 h-4 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>고양시 관내 실시간 수요처 확보</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regional Partners Grid -->
+        <div class="p-6 sm:p-8 rounded-xl bg-slate-900/60 border border-slate-800 mb-16">
+          <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider text-center mb-6">
+            고양시 지역 상생 공식 협력 기관
+          </h4>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="p-4 rounded-lg bg-slate-800/60 border border-slate-700/60 text-center flex flex-col justify-center items-center">
+              <p class="text-xs sm:text-sm font-bold text-white mb-1">시니어AI교육진흥원 (SAPN)</p>
+              <p class="text-[11px] text-amber-300/80 font-medium">커리큘럼 공인 & 인프라 협력</p>
+            </div>
+            <div class="p-4 rounded-lg bg-slate-800/60 border border-slate-700/60 text-center flex flex-col justify-center items-center">
+              <p class="text-xs sm:text-sm font-bold text-white mb-1">고양시 소상공인연합회</p>
+              <p class="text-[11px] text-amber-300/80 font-medium">골목상권 점포 매칭 지원</p>
+            </div>
+            <div class="p-4 rounded-lg bg-slate-800/60 border border-slate-700/60 text-center flex flex-col justify-center items-center">
+              <p class="text-xs sm:text-sm font-bold text-white mb-1">고양시 골목상권 상인회</p>
+              <p class="text-[11px] text-amber-300/80 font-medium">현장 실증 & 팝업 공간 협력</p>
+            </div>
+            <div class="p-4 rounded-lg bg-slate-800/60 border border-slate-700/60 text-center flex flex-col justify-center items-center">
+              <p class="text-xs sm:text-sm font-bold text-white mb-1">고양시 노인종합복지관</p>
+              <p class="text-[11px] text-amber-300/80 font-medium">5070 우수 교육생 발굴 연계</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sangsangin '상상人' Benchmarked Frame Feature Card -->
+        <div class="rounded-2xl bg-gradient-to-r from-blue-900/40 via-slate-900 to-amber-900/30 border-2 border-blue-500/50 p-7 sm:p-10 relative overflow-hidden shadow-2xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 space-y-4">
+              <div class="inline-flex items-center gap-2 text-xs font-bold text-blue-400 bg-blue-500/10 px-3 py-1 rounded-md border border-blue-400/20">
+                <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+                <span>시니어 디렉터 人</span>
+              </div>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                상상이 현실이 되는<br />
+                골목을 만드는 사람들
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                평생 쌓은 커리어와 경험에 AI 숏폼 스킬을 장착한 5070 주역들입니다. 은퇴가 아닌 당당한 지역 마케팅 전문가로 우뚝 선 디렉터들의 생생한 목소리를 만나보세요.
+              </p>
+              <button onclick="openApplyModal('senior')" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-amber-400 hover:text-amber-300 pt-2 transition-colors cursor-pointer group">
+                <span>디렉터 과정 지원하기</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+
+            <div class="lg:col-span-7 space-y-3.5">
+              <div class="p-4 sm:p-5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-400/40 transition-colors">
+                <div class="flex items-center justify-between mb-2">
+                  <div>
+                    <span class="text-sm font-bold text-white mr-2">정성훈 수석 디렉터</span>
+                    <span class="text-xs text-slate-400">61세 / 전 대기업 마케팅 임원</span>
+                  </div>
+                  <span class="text-[11px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">브랜드 스토리텔링 & 숏폼 기획</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 italic flex items-start gap-2">
+                  <span class="text-amber-400 font-serif text-lg leading-none">&ldquo;</span>
+                  <span>정년 후 멈췄던 열정이 AI 툴을 만나 지역 소상공인과 함께 다시 뛰기 시작했습니다. 은퇴가 아닌 새로운 커리어의 개막입니다.</span>
+                </p>
+              </div>
+
+              <div class="p-4 sm:p-5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-400/40 transition-colors">
+                <div class="flex items-center justify-between mb-2">
+                  <div>
+                    <span class="text-sm font-bold text-white mr-2">최은경 전문 크리에이터</span>
+                    <span class="text-xs text-slate-400">59세 / 전직 교사</span>
+                  </div>
+                  <span class="text-[11px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">CapCut AI & 나레이션 디렉팅</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 italic flex items-start gap-2">
+                  <span class="text-amber-400 font-serif text-lg leading-none">&ldquo;</span>
+                  <span>처음엔 스마트폰도 낯설었지만, 지금은 매장 사장님들의 사연을 30초 감동 숏폼으로 담아낼 때 가장 큰 보람을 느낍니다.</span>
+                </p>
+              </div>
+
+              <div class="p-4 sm:p-5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-blue-400/40 transition-colors">
+                <div class="flex items-center justify-between mb-2">
+                  <div>
+                    <span class="text-sm font-bold text-white mr-2">한동진 테크 디렉터</span>
+                    <span class="text-xs text-slate-400">64세 / 전 IT 솔루션 대표</span>
+                  </div>
+                  <span class="text-[11px] px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/30">Sora & HeyGen AI 모델링</span>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 italic flex items-start gap-2">
+                  <span class="text-amber-400 font-serif text-lg leading-none">&ldquo;</span>
+                  <span>시니어의 축적된 삶의 지혜와 최첨단 AI 기술의 결합은 우리 골목상권을 살리는 가장 따뜻하고 정교한 무기입니다.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 9. PRICING & SPECIAL OFFER -->
+    <section id="pricing" class="py-24 bg-[#0B1120] border-t border-slate-800/80 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest">
+            Pricing & Special Offer
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight mt-2 mb-4">
+            1기 참여자 및 초기 협력 점포만을 위한 특별 혜택
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            고양시 지역 상생 선도 모델 구축을 위해 1기 과정에 한해 정부/지자체 지원 전액 무료 혜택을 제공합니다.
+          </p>
+        </div>
+
+        <!-- Urgency Alert -->
+        <div class="max-w-3xl mx-auto mb-12 p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-start sm:items-center gap-3">
+          <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5 sm:mt-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div class="text-xs sm:text-sm text-slate-200">
+            <strong class="text-amber-400 font-bold mr-1.5">선착순 정원 마감 안내:</strong>
+            원활한 1:1 밀착 디렉팅과 성공적인 현장 매칭을 위해 1기 수강생은 <span class="text-white font-bold underline decoration-amber-400">선착순 15명</span>, 시범 참여 매장은 <span class="text-white font-bold underline decoration-amber-400">선착순 5곳</span>으로 엄격히 제한합니다.
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
+          <!-- Card 1: Senior Course -->
+          <div class="rounded-2xl bg-slate-900/90 border-2 border-amber-400/80 p-7 sm:p-9 flex flex-col justify-between shadow-2xl relative">
+            <div class="absolute -top-3.5 left-7 px-3 py-1 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 text-[11px] font-black uppercase tracking-wider rounded-md shadow-md">
+              1기 특별 선착순 지원
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 mt-2">
+                <div class="flex items-center gap-2 text-sm font-bold text-amber-400">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+                  <span>시니어 AI 크리에이터 1기 과정</span>
+                </div>
+                <span class="text-xs font-mono text-slate-400">정원 15명 한정</span>
+              </div>
+
+              <div class="mb-6 pb-6 border-b border-slate-800">
+                <div class="flex items-baseline gap-2 mb-1">
+                  <span class="text-sm text-slate-500 line-through font-mono">정가 500,000원</span>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-3xl sm:text-4xl font-black text-amber-400 font-mono tracking-tight">전액 무료 (0원)</span>
+                  <span class="text-xs text-amber-300 font-medium bg-amber-500/20 px-2 py-0.5 rounded">정부/지자체 전액 지원</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-2">
+                  선착순 선발 완료 시 조기 마감되며 2기부터는 유료로 전환됩니다.
+                </p>
+              </div>
+
+              <!-- Quota Bar -->
+              <div class="mb-6 p-3 rounded-lg bg-slate-800/80 border border-slate-700/80">
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">1기 정원 모집 현황</span>
+                  <span class="text-amber-400 font-mono font-bold">11 / 15명 접수 (4석 잔여)</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-700 overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-amber-500 to-amber-400 rounded-full w-[73%]"></div>
+                </div>
+              </div>
+
+              <div class="space-y-3 mb-8">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">포함 혜택 및 실습 지원</p>
+                <ul class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>AI 숏폼 제작 실습 (OpenAI Sora, HeyGen, CapCut AI)</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>소상공인 1:1 매칭 실전 프로젝트 및 영상 제작 지원</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>시니어 AI 디렉터 수료증 발급 및 지속적인 상권 마케터 활동 지원</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-amber-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>고양시 창작 스튜디오 장비 및 편집 워크스테이션 무상 이용</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button onclick="openApplyModal('senior')" class="w-full py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 group cursor-pointer">
+              <span>시니어 1기 무료 지원하기</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+
+          <!-- Card 2: Store Owner Package -->
+          <div class="rounded-2xl bg-slate-900/90 border border-slate-800 hover:border-blue-500/60 transition-all p-7 sm:p-9 flex flex-col justify-between shadow-2xl relative">
+            <div class="absolute -top-3.5 left-7 px-3 py-1 bg-gradient-to-r from-blue-600 to-blue-500 text-white text-[11px] font-bold uppercase tracking-wider rounded-md shadow-md">
+              소상공인 베타 테스트
+            </div>
+            <div>
+              <div class="flex items-center justify-between mb-4 mt-2">
+                <div class="flex items-center gap-2 text-sm font-bold text-blue-400">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></svg>
+                  <span>소상공인 숏폼 마케팅 매칭 패키지</span>
+                </div>
+                <span class="text-xs font-mono text-slate-400">고양시 관내 5곳 한정</span>
+              </div>
+
+              <div class="mb-6 pb-6 border-b border-slate-800">
+                <div class="flex items-baseline gap-2 mb-1">
+                  <span class="text-sm text-slate-500 line-through font-mono">정가 1,000,000원</span>
+                </div>
+                <div class="flex items-baseline gap-2">
+                  <span class="text-3xl sm:text-4xl font-black text-white font-mono tracking-tight">시범 무료 (0원)</span>
+                  <span class="text-xs text-blue-300 font-medium bg-blue-500/20 px-2 py-0.5 rounded">베타 매칭 지원</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-2">
+                  베타 테스트 참여 매장 선정 시 전문 디렉터가 3편의 고품질 숏폼을 무상 제작합니다.
+                </p>
+              </div>
+
+              <!-- Quota Bar -->
+              <div class="mb-6 p-3 rounded-lg bg-slate-800/80 border border-slate-700/80">
+                <div class="flex justify-between text-xs mb-1.5">
+                  <span class="text-slate-300 font-medium">시범 협력 점포 매칭 현황</span>
+                  <span class="text-blue-400 font-mono font-bold">3 / 5곳 접수 (2곳 잔여)</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-slate-700 overflow-hidden">
+                  <div class="h-full bg-gradient-to-r from-blue-600 to-blue-400 rounded-full w-[60%]"></div>
+                </div>
+              </div>
+
+              <div class="space-y-3 mb-8">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">포함 서비스 내역</p>
+                <ul class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>매장 맞춤형 숏폼 콘텐츠 3편 기획 및 완제작</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>SNS (인스타그램 릴스 / 유튜브 쇼츠) 바이럴 최적화 세팅</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>지역 타깃 상권 분석 및 잠재 고객층 유입 컨설팅</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-blue-400 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>공실 팝업 거점 연계 오프라인 프로모션 우선 참여 권한</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button onclick="openApplyModal('store')" class="w-full py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm transition-all shadow-lg shadow-blue-600/30 flex items-center justify-center gap-2 group cursor-pointer">
+              <span>소상공인 시범 매칭 무료 신청</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 10. SERVICE CONTACT & CONSULTATION FORM -->
+    <section id="contact" class="py-24 bg-[#0F172A] border-t border-slate-800/80 relative">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-semibold text-amber-400 uppercase tracking-widest">
+            Service Contact & Consultation
+          </span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white tracking-tight mt-2 mb-4">
+            서비스 문의 및 간편 상담 신청
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            궁금한 점이 있으시거나 교육 및 사업 참여 상담을 원하시면 언제든 편하게 신청해 주세요. 전담 매니저가 친절하게 상담해 드립니다.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+          <!-- Left Info Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="p-7 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-6 shadow-xl">
+              <h3 class="text-lg font-bold text-white border-b border-slate-800 pb-4">
+                빠른 유선 및 이메일 문의
+              </h3>
+
+              <div class="flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-400 font-medium">전화 상담 번호</p>
+                    <a href="tel:010-123-4567" class="text-base sm:text-lg font-bold text-white hover:text-amber-400 transition-colors font-mono">
+                      010-123-4567
+                    </a>
+                  </div>
+                </div>
+                <button onclick="copyText('010-123-4567', this)" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors text-xs flex items-center gap-1 cursor-pointer" title="전화번호 복사">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+
+              <div class="flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                  <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+                    <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div>
+                    <p class="text-xs text-slate-400 font-medium">공식 이메일 문의</p>
+                    <a href="mailto:aaa@naver.com" class="text-base sm:text-lg font-bold text-white hover:text-blue-400 transition-colors font-mono">
+                      aaa@naver.com
+                    </a>
+                  </div>
+                </div>
+                <button onclick="copyText('aaa@naver.com', this)" class="p-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition-colors text-xs flex items-center gap-1 cursor-pointer" title="이메일 복사">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+
+              <div class="flex items-start gap-3 pt-2 border-t border-slate-800">
+                <div class="w-10 h-10 rounded-lg bg-slate-800 text-slate-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs text-slate-400 font-medium">상담 가능 시간</p>
+                  <p class="text-sm font-semibold text-white">평일 09:00 ~ 18:00</p>
+                  <p class="text-xs text-slate-400 mt-0.5">(주말 및 공휴일 휴무 · 온라인 문의 24시간 상시 접수)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800/80 text-xs text-slate-300 leading-relaxed">
+              💡 <strong class="text-amber-400">문자 상담 안내:</strong> 위 연락처로 &lsquo;성함 / 신청 유형&rsquo;을 간단히 문자로 남겨주시면 담당 컨설턴트가 2시간 이내에 확인 후 회신해 드립니다.
+            </div>
+          </div>
+
+          <!-- Right Interactive Form Column -->
+          <div id="apply" class="lg:col-span-7">
+            <div class="p-7 sm:p-9 rounded-2xl bg-slate-900/90 border border-slate-800 shadow-xl">
+              <!-- Success State Container -->
+              <div id="form-success" class="hidden py-12 text-center space-y-4">
+                <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto border border-emerald-500/30">
+                  <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3 class="text-2xl font-bold text-white">간편 상담 신청이 접수되었습니다!</h3>
+                <p class="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
+                  입력해주신 연락처로 고양시 프로젝트 전담 디렉터가 확인 후 빠르게 연락드리겠습니다.
+                </p>
+                <button onclick="resetContactForm()" class="mt-4 px-6 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-colors cursor-pointer">
+                  추가 문의 작성하기
+                </button>
+              </div>
+
+              <!-- Main Form -->
+              <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-5">
+                <div class="border-b border-slate-800 pb-3">
+                  <h3 class="text-lg font-bold text-white">간편 상담 신청서</h3>
+                  <p class="text-xs text-slate-400 mt-1">
+                    1분 작성으로 1기 과정 우선 심사 및 무료 컨설팅을 지원받으세요.
+                  </p>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-2">
+                    신청 유형 선택 <span class="text-rose-400">*</span>
+                  </label>
+                  <div class="grid grid-cols-2 gap-3">
+                    <button type="button" onclick="setContactType('senior')" id="contact-type-senior" class="py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer flex items-center justify-center gap-2 bg-amber-400 text-slate-950 border-amber-400 font-bold shadow-md shadow-amber-500/20">
+                      <span>[ ] 시니어 크리에이터 수강</span>
+                    </button>
+                    <button type="button" onclick="setContactType('store')" id="contact-type-store" class="py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer flex items-center justify-center gap-2 bg-slate-800/80 text-slate-300 border-slate-700 hover:border-slate-600">
+                      <span>[ ] 소상공인 마케팅 문의</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">
+                      성함 / 대표자명 <span class="text-rose-400">*</span>
+                    </label>
+                    <input type="text" required id="contact-name" placeholder="예: 홍길동" class="w-full px-4 py-2.5 rounded-lg bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">
+                      상호명 (소상공인인 경우)
+                    </label>
+                    <input type="text" id="contact-store" placeholder="예: 밤리단길 베이커리" class="w-full px-4 py-2.5 rounded-lg bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400" />
+                  </div>
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-1.5">
+                    연락처 (휴대폰 번호) <span class="text-rose-400">*</span>
+                  </label>
+                  <input type="tel" required id="contact-phone" placeholder="예: 010-1234-5678" class="w-full px-4 py-2.5 rounded-lg bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400" />
+                </div>
+
+                <div>
+                  <label class="block text-xs font-semibold text-slate-300 mb-1.5">
+                    궁금한 점 또는 희망 지역 (고양시 관내)
+                  </label>
+                  <textarea rows="3" id="contact-message" placeholder="예: 일산동구 거주 중이며 스마트폰 기초만 아는데 따라갈 수 있는지 상담 희망합니다." class="w-full px-4 py-2.5 rounded-lg bg-slate-800/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400 resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm sm:text-base transition-all shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 cursor-pointer">
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                  <span>간편 상담 신청하기 (선착순 우선 접수)</span>
+                </button>
+
+                <p class="text-[11px] text-slate-400 text-center">
+                  수집된 개인정보는 고양시 시니어 AI 숏폼 프로젝트 상담 목적 이외의 용도로 사용되지 않습니다.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 11. CLOSING & CTA -->
+    <section class="py-24 bg-gradient-to-b from-[#0F172A] to-[#070B14] relative overflow-hidden border-t border-slate-800/80">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-amber-500/10 blur-[130px] rounded-full pointer-events-none"></div>
+
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-6">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+          <span>CLOSING & CALL TO ACTION</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight mb-6 text-balance">
+          &ldquo;AI 시대, 지역을 살리는 가장 스마트한 변화에<br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">
+            지금 합류하세요!
+          </span>&rdquo;
+        </h2>
+
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10">
+          경험에 기술을 더해 새로운 도전을 시작할 <strong class="text-white font-semibold">시니어 크리에이터</strong>와,<br class="hidden sm:inline" />
+          부담 없는 마케팅으로 매출 반전을 이룰 <strong class="text-white font-semibold">소상공인 사장님</strong>을 기다립니다.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
+          <button onclick="openApplyModal('senior')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm sm:text-base shadow-xl shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 group cursor-pointer">
+            <svg class="w-4 h-4 text-slate-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg>
+            <span>시니어 1기 크리에이터 지금 신청하기</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+
+          <button onclick="openApplyModal('store')" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm sm:text-base border border-blue-500/30 shadow-xl shadow-blue-600/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></svg>
+            <span>소상공인 숏폼 마케팅 지원 신청하기</span>
+          </button>
+        </div>
+
+        <p class="text-xs text-slate-500 mt-6">
+          * 1기 정원 마감 시 다음 기수로 대기 등록됩니다. (선착순 우선 배정)
+        </p>
+      </div>
+    </section>
+
+
+    <!-- 12. CORPORATE 5-COLUMN FOOTER -->
+    <footer class="bg-[#070B14] text-slate-400 border-t border-slate-800/80 pt-16 pb-12 text-xs">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+          <div>
+            <h4 class="text-white font-bold text-sm mb-4">프로젝트 소개</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#problem" class="hover:text-amber-400 transition-colors">비전 & 추진 배경</a></li>
+              <li><a href="#solution" class="hover:text-amber-400 transition-colors">고양시 상생 모델</a></li>
+              <li><a href="#trust" class="hover:text-amber-400 transition-colors">사회적 가치 (CSV)</a></li>
+              <li><span class="text-slate-600">지자체 정책 협력</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-sm mb-4">교육 커리큘럼</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#solution" class="hover:text-amber-400 transition-colors">Easy-AI 툴킷 안내</a></li>
+              <li><a href="#solution" class="hover:text-amber-400 transition-colors">Sora & HeyGen 실습</a></li>
+              <li><a href="#solution" class="hover:text-amber-400 transition-colors">CapCut AI 편집 마스터</a></li>
+              <li><a href="#benefits" class="hover:text-amber-400 transition-colors">공인 디렉터 수료증</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-sm mb-4">상생 솔루션</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#solution" class="hover:text-amber-400 transition-colors">공실 점포 스튜디오</a></li>
+              <li><a href="#solution" class="hover:text-amber-400 transition-colors">골목상권 1:1 매칭</a></li>
+              <li><a href="#benefits" class="hover:text-amber-400 transition-colors">바이럴 숏폼 패키지</a></li>
+              <li><a href="#pricing" class="hover:text-amber-400 transition-colors">소상공인 무료 시범지원</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-sm mb-4">신뢰 & 파트너</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#trust" class="hover:text-amber-400 transition-colors">시니어AI교육진흥원</a></li>
+              <li><a href="#trust" class="hover:text-amber-400 transition-colors">고양시 소상공인연합회</a></li>
+              <li><a href="#trust" class="hover:text-amber-400 transition-colors">골목상권 상인회 연계</a></li>
+              <li><a href="#trust" class="hover:text-amber-400 transition-colors">고양시 노인복지관</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold text-sm mb-4">시니어 디렉터 人</h4>
+            <ul class="space-y-2.5">
+              <li><a href="#trust" class="hover:text-amber-400 transition-colors">디렉터 인터뷰</a></li>
+              <li><a href="#pricing" class="hover:text-amber-400 transition-colors">1기 수강생 모집요강</a></li>
+              <li><a href="#contact" class="hover:text-amber-400 transition-colors">상담 신청 센터</a></li>
+              <li><a href="#contact" class="hover:text-amber-400 transition-colors">오시는 길 & 안내</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-800 pt-8 pb-4">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
+            <div class="flex items-center gap-4 text-xs">
+              <a href="#" class="text-slate-300 hover:text-white font-semibold">개인정보처리방침</a>
+              <span class="text-slate-700">|</span>
+              <a href="#" class="hover:text-white">이용약관</a>
+              <span class="text-slate-700">|</span>
+              <a href="#contact" class="hover:text-white">고객지원센터</a>
+            </div>
+
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="flex items-center gap-1.5 px-3 py-1.5 rounded bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-colors cursor-pointer">
+              <span>TOP 으로 이동</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </button>
+          </div>
+
+          <div class="space-y-1.5 text-slate-400 text-[11px] leading-relaxed">
+            <p>
+              사업추진체: 고양시 시니어 AI 숏폼 크리에이터 디렉터 양성 사업단 · 협력기관: 시니어AI교육진흥원(SAPN) / 고양시 소상공인연합회
+            </p>
+            <p>
+              소재지: 경기도 고양시 일산동구 중앙로 1234 (고양 AI 상생 창작 혁신 센터) · 직통 문의전화: 010-123-4567 · 공식 이메일: aaa@naver.com
+            </p>
+            <p>
+              운영시간: 평일 09:00 ~ 18:00 (주말 및 공휴일 휴무) · 관내 공실 거점 팝업 스튜디오 및 현장 지원 문의 상시 접수
+            </p>
+            <p class="pt-2 text-slate-400 font-mono">
+              Copyright © 2026 Goyang Senior AI Creator Director Project. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- 13. APPLICATION MODAL -->
+    <div id="apply-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+      <div class="relative w-full max-w-lg rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden p-6 sm:p-8" onclick="event.stopPropagation()">
+        <button onclick="closeApplyModal()" class="absolute top-5 right-5 p-2 rounded-lg text-slate-400 hover:text-white bg-slate-800/80 hover:bg-slate-700 transition-colors" aria-label="닫기">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+
+        <div id="modal-success" class="hidden py-8 text-center space-y-4">
+          <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto border border-emerald-500/30">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">신청이 성공적으로 접수되었습니다</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm mx-auto">
+            정원 선착순 우선 심사 명단에 등록되었습니다. 전담 매니저가 24시간 이내에 개별 연락드립니다.
+          </p>
+          <div class="pt-4">
+            <button onclick="closeApplyModal()" class="w-full py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm transition-colors cursor-pointer">
+              확인 완료
+            </button>
+          </div>
+        </div>
+
+        <div id="modal-form-container">
+          <div class="mb-6">
+            <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">고양시 지역 상생 프로젝트</span>
+            <h3 id="modal-title" class="text-xl sm:text-2xl font-bold text-white mt-1">시니어 1기 크리에이터 지원서</h3>
+            <p class="text-xs text-slate-400 mt-1">정부/지자체 지원 연계로 1기 전액 무료 혜택이 적용됩니다.</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2.5 p-1 bg-slate-800/80 rounded-xl mb-5">
+            <button type="button" onclick="setModalApplicantType('senior')" id="modal-tab-senior" class="py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-amber-400 text-slate-950 shadow-sm">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              <span>시니어 1기 수강생</span>
+            </button>
+            <button type="button" onclick="setModalApplicantType('store')" id="modal-tab-store" class="py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all text-slate-400 hover:text-white">
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/></svg>
+              <span>소상공인 매칭</span>
+            </button>
+          </div>
+
+          <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">
+                성함 / 대표자명 <span class="text-rose-400">*</span>
+              </label>
+              <input type="text" required id="modal-name" placeholder="예: 홍길동" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400" />
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">
+                연락처 (휴대폰 번호) <span class="text-rose-400">*</span>
+              </label>
+              <input type="tel" required id="modal-phone" placeholder="예: 010-1234-5678" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400" />
+            </div>
+
+            <div>
+              <label id="modal-extra-label" class="block text-xs font-medium text-slate-300 mb-1">
+                희망 거주 지역 / 연령대
+              </label>
+              <input type="text" id="modal-extra" placeholder="예: 일산동구 정발산동 / 60대" class="w-full px-3.5 py-2.5 rounded-lg bg-slate-800 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-amber-400" />
+            </div>
+
+            <div class="pt-2">
+              <button type="submit" id="modal-submit-btn" class="w-full py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2 cursor-pointer">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span id="modal-submit-text">1기 지원서 제출하기</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 14. 9:16 VERTICAL SHORT-FORM VIDEO SIMULATOR MODAL -->
+    <div id="video-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+      <div class="relative w-full max-w-sm h-[680px] max-h-[90vh] rounded-3xl bg-slate-950 border-4 border-slate-800 shadow-2xl overflow-hidden flex flex-col justify-between" onclick="event.stopPropagation()">
+        <!-- Background Canvas -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="/assets/images/shortform_showcase_mockup_1791440463049.jpg"
+            onerror="this.src='/src/assets/images/shortform_showcase_mockup_1791440463049.jpg'"
+            alt="숏폼 비디오 릴스"
+            class="w-full h-full object-cover filter brightness-[0.7]"
+            referrerpolicy="no-referrer"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-slate-950/70"></div>
+        </div>
+
+        <!-- Top Progress & Controls -->
+        <div class="relative z-10 p-4 space-y-3">
+          <div class="w-full h-1 bg-white/30 rounded-full overflow-hidden">
+            <div id="video-progress" class="h-full bg-amber-400 transition-all duration-300" style="width: 25%"></div>
+          </div>
+
+          <div class="flex items-center justify-between text-white">
+            <div class="flex items-center gap-2">
+              <span class="text-[11px] font-bold px-2 py-0.5 rounded bg-amber-500/90 text-slate-950">AI 숏폼 릴스</span>
+              <span id="vmodal-views" class="text-xs text-slate-300 font-mono">482,500</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="toggleMute()" id="mute-btn" class="p-1.5 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer" aria-label="음소거 토글">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              </button>
+              <button onclick="closeVideoModal()" class="p-1.5 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors cursor-pointer" aria-label="닫기">
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Tap Play/Pause Button -->
+        <div onclick="togglePlay()" class="relative z-10 flex-1 flex items-center justify-center cursor-pointer">
+          <div id="play-indicator" class="hidden w-16 h-16 rounded-full bg-black/60 border border-white/20 text-white flex items-center justify-center backdrop-blur-sm animate-pulse">
+            <svg class="w-8 h-8 fill-current ml-1" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+        </div>
+
+        <!-- Bottom Story & Actions -->
+        <div class="relative z-10 p-4 space-y-3 text-white">
+          <div class="flex items-end justify-between gap-4">
+            <div class="space-y-1.5 flex-1 pr-2">
+              <div class="flex items-center gap-1.5 text-xs text-amber-300 font-medium">
+                <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                <span id="vmodal-director">김명숙 디렉터 (62세)</span>
+              </div>
+              <p id="vmodal-title" class="text-sm font-bold text-white leading-snug line-clamp-2">
+                30년 제빵 장인의 새벽 4시 효모 발효 이야기
+              </p>
+              <div class="flex items-center gap-1.5 text-xs text-slate-300">
+                <svg class="w-3 h-3 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span id="vmodal-store">밤리단길 아틀리에 베이커리</span>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center gap-3 shrink-0">
+              <button onclick="toggleLike()" id="vmodal-like-btn" class="flex flex-col items-center group cursor-pointer">
+                <div class="w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center group-hover:bg-black/80 transition-colors">
+                  <svg id="vmodal-like-icon" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                </div>
+                <span id="vmodal-like-count" class="text-[11px] text-slate-200 mt-1 font-mono font-medium">1,420</span>
+              </button>
+
+              <button onclick="alert('영상 링크가 클립보드에 복사되었습니다.')" class="flex flex-col items-center group cursor-pointer">
+                <div class="w-10 h-10 rounded-full bg-black/60 text-white flex items-center justify-center group-hover:bg-black/80 transition-colors">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                </div>
+                <span class="text-[11px] text-slate-200 mt-1 font-mono font-medium">공유</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-700/80 text-xs flex items-center justify-between">
+            <span id="vmodal-metric" class="text-amber-400 font-semibold">SNS 조회수 48.2만회</span>
+            <span id="vmodal-submetric" class="text-slate-400 text-[11px]">방문객 142% 증가</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 15. EMBEDDED JAVASCRIPT LOGIC -->
+    <script>
+      // Dataset
+      const PILLARS_DATA = {
+        toolkit: {
+          step: '01',
+          title: '쉬운 Easy-AI 툴킷 기반 교육',
+          subtitle: '1시간 만에 완성하는 실전 숏폼 영상',
+          description: '복잡한 코딩이나 전문 영상 편집 기술이 없어도 Sora, HeyGen, CapCut AI 등 검증된 최신 AI 도구를 활용해 5070 누구나 1시간 만에 감각적인 고품질 숏폼을 제작할 수 있도록 밀착 교육합니다.',
+          tags: ['프롬프트 엔지니어링', 'AI 아바타·보이스 생성', '숏폼 템플릿 자동화', '촬영 짐벌 기본 운용'],
+          tools: ['OpenAI Sora', 'HeyGen', 'CapCut AI', 'ElevenLabs']
+        },
+        studio: {
+          step: '02',
+          title: '지역 공실 점포의 크리에이터 거점화',
+          subtitle: '방치된 도심 공실을 창작 스튜디오로',
+          description: '고양시 내 방치된 유휴 공실 점포를 시니어 AI 크리에이터의 촬영·편집 스튜디오이자 지역 소상공인과의 팝업 마케팅 소통 거점으로 리브랜딩하여 지역 활성화의 앵커 공간을 구축합니다.',
+          tags: ['공실 점포 재생', '조명 & 팝업 스튜디오', '마케팅 라운지 운영', '촬영 장비 무상 지원'],
+          tools: ['스마트 짐벌 장비', '조명 스튜디오', '편집 워크스테이션', '라이브 방송 키트']
+        },
+        matching: {
+          step: '03',
+          title: '1:1 상권 맞춤형 매칭 및 디렉팅',
+          subtitle: '실제 매출 견인으로 이어지는 실전 프로젝트',
+          description: '단순 강의 수료로 끝나지 않습니다. 고양시 골목상권 소상공인 매장과 시니어 크리에이터를 1:1로 직접 매칭하여 매장의 진정성 있는 스토리를 담은 바이럴 숏폼을 기획·제작하고 실질적인 매출 증대를 지원합니다.',
+          tags: ['1:1 전담 매칭', '매장 스토리텔링', '실전 바이럴 집행', '단골 유치 프로모션'],
+          tools: ['상권 데이터 분석', '릴스·쇼츠 배포', '고객 반응 피드백', '스마트플레이스 최적화']
+        }
+      };
+
+      const CASE_DATA = [
+        {
+          category: '식음료 / 베이커리',
+          store: '밤리단길 아틀리에 베이커리',
+          location: '고양시 일산동구 정발산동',
+          director: '김명숙 디렉터 (62세)',
+          title: '30년 제빵 장인의 새벽 4시 효모 발효 이야기',
+          metric: 'SNS 조회수 48.2만회 달성',
+          submetric: '방문객 142% 증가 · 주말 조기 품절',
+          quote: '대행사는 너무 비싸 포기했었는데, 시니어 선생님께서 우리 빵의 정성을 진심으로 담아주셔서 눈물이 났습니다.',
+          duration: '0:45',
+          views: '482,500'
+        },
+        {
+          category: '전통식품 / 방앗간',
+          store: '원당 전통 참기름 방앗간',
+          location: '고양시 덕양구 성사동',
+          director: '박영호 디렉터 (67세)',
+          title: '할머니의 40년 저온압착 참기름 고소한 비결 쇼츠',
+          metric: '네이버 스마트스토어 주문 320% 급증',
+          submetric: '전국 배송 주문 1,800병 돌파',
+          quote: 'AI 아바타로 젊은 감성을 더해주시니 2030 세대에서도 주문이 쏟아져 깜짝 놀랐습니다.',
+          duration: '0:38',
+          views: '621,900'
+        },
+        {
+          category: '라이프스타일 / 화원',
+          store: '화정 초록 플랜트 스튜디오',
+          location: '고양시 덕양구 화정동',
+          director: '이선희 디렉터 (58세)',
+          title: '아파트 베란다에서 죽지 않는 반려식물 3가지',
+          metric: '로컬 단골 고객 유입 3.4배 상승',
+          submetric: '원데이 클래스 모집 당일 전석 마감',
+          quote: '시니어 디렉터님과 대화하며 우리 매장만의 매력을 새롭게 발견할 수 있었습니다.',
+          duration: '0:52',
+          views: '295,400'
+        }
+      ];
+
+      let currentCaseIndex = 0;
+      let modalApplicantType = 'senior';
+      let contactApplicantType = 'senior';
+      let isVideoPlaying = true;
+      let isVideoLiked = false;
+      let videoLikeCount = 1420;
+      let progressVal = 25;
+      let progressTimer = null;
+
+      // 1. Navigation Scroll Effect & Mobile Drawer
+      window.addEventListener('scroll', () => {
+        const header = document.getElementById('main-header');
+        if (window.scrollY > 20) {
+          header.classList.add('bg-[#0F172A]/90', 'backdrop-blur-md', 'border-slate-800/80', 'shadow-lg');
+          header.classList.remove('bg-gradient-to-b', 'border-transparent');
+        } else {
+          header.classList.remove('bg-[#0F172A]/90', 'backdrop-blur-md', 'border-slate-800/80', 'shadow-lg');
+          header.classList.add('bg-gradient-to-b', 'border-transparent');
+        }
+      });
+
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+      });
+
+      // 2. Solution Pillar Switcher
+      function selectPillar(key) {
+        const p = PILLARS_DATA[key];
+        if (!p) return;
+
+        ['toolkit', 'studio', 'matching'].forEach(id => {
+          const btn = document.getElementById(`pillar-btn-${id}`);
+          if (id === key) {
+            btn.className = 'pillar-btn text-left p-6 sm:p-7 rounded-xl border transition-all duration-300 cursor-pointer flex flex-col justify-between bg-slate-900 border-amber-400/80 shadow-xl shadow-amber-500/10 -translate-y-1';
+          } else {
+            btn.className = 'pillar-btn text-left p-6 sm:p-7 rounded-xl border transition-all duration-300 cursor-pointer flex flex-col justify-between bg-slate-900/60 border-slate-800 hover:border-slate-700 hover:bg-slate-900/90';
+          }
+        });
+
+        document.getElementById('pillar-badge').innerText = `핵심 구현 프로세스 ${p.step}`;
+        document.getElementById('pillar-detail-title').innerText = p.title;
+        document.getElementById('pillar-detail-desc').innerText = p.description;
+
+        const tagsContainer = document.getElementById('pillar-tags');
+        tagsContainer.innerHTML = p.tags.map(tag => `
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>${tag}</span>
+          </div>
+        `).join('');
+
+        const toolsContainer = document.getElementById('pillar-tools');
+        toolsContainer.innerHTML = p.tools.map(tool => `
+          <span class="text-xs px-2.5 py-1 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono">${tool}</span>
+        `).join('');
+      }
+
+      // 3. Benefits Tab Switcher
+      function switchBenefitTab(tab) {
+        const seniorView = document.getElementById('benefit-view-senior');
+        const storeView = document.getElementById('benefit-view-store');
+        const seniorBtn = document.getElementById('tab-btn-senior');
+        const storeBtn = document.getElementById('tab-btn-store');
+
+        if (tab === 'senior') {
+          seniorView.classList.remove('hidden');
+          storeView.classList.add('hidden');
+          seniorBtn.className = 'px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-amber-400 text-slate-950 shadow-md shadow-amber-500/20 cursor-pointer';
+          storeBtn.className = 'px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 text-slate-400 hover:text-white cursor-pointer';
+        } else {
+          seniorView.classList.add('hidden');
+          storeView.classList.remove('hidden');
+          seniorBtn.className = 'px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 text-slate-400 hover:text-white cursor-pointer';
+          storeBtn.className = 'px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 bg-blue-600 text-white shadow-md shadow-blue-600/30 cursor-pointer';
+        }
+      }
+
+      // 4. Showcase Carousel Logic
+      function updateShowcaseUI() {
+        const c = CASE_DATA[currentCaseIndex];
+        document.getElementById('case-counter').innerText = `CASE 0${currentCaseIndex + 1}`;
+        document.getElementById('showcase-category').innerText = c.category;
+        document.getElementById('showcase-duration').innerText = c.duration;
+        document.getElementById('showcase-director').innerHTML = `
+          <svg class="w-3.5 h-3.5 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          ${c.director} 디렉팅
+        `;
+        document.getElementById('showcase-views').innerText = `${c.views}회`;
+        document.getElementById('showcase-location').innerText = c.location;
+        document.getElementById('showcase-store').innerText = c.store;
+        document.getElementById('showcase-title').innerText = c.title;
+        document.getElementById('showcase-metric').innerText = c.metric;
+        document.getElementById('showcase-submetric').innerText = c.submetric;
+        document.getElementById('showcase-quote').innerText = `“${c.quote}”`;
+
+        [0, 1, 2].forEach(i => {
+          const btn = document.getElementById(`case-btn-${i}`);
+          if (i === currentCaseIndex) {
+            btn.className = 'case-btn w-full text-left p-3.5 rounded-lg border transition-all cursor-pointer flex items-center justify-between bg-slate-900 border-amber-400/80 text-white shadow-md';
+          } else {
+            btn.className = 'case-btn w-full text-left p-3.5 rounded-lg border transition-all cursor-pointer flex items-center justify-between bg-slate-900/40 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700';
+          }
+        });
+      }
+
+      function selectCase(idx) {
+        currentCaseIndex = idx;
+        updateShowcaseUI();
+      }
+      function prevCase() {
+        currentCaseIndex = (currentCaseIndex - 1 + CASE_DATA.length) % CASE_DATA.length;
+        updateShowcaseUI();
+      }
+      function nextCase() {
+        currentCaseIndex = (currentCaseIndex + 1) % CASE_DATA.length;
+        updateShowcaseUI();
+      }
+
+      // 5. Video Player Modal
+      function openVideoModal() {
+        const c = CASE_DATA[currentCaseIndex];
+        document.getElementById('vmodal-views').innerText = c.views;
+        document.getElementById('vmodal-director').innerText = c.director;
+        document.getElementById('vmodal-title').innerText = c.title;
+        document.getElementById('vmodal-store').innerText = `${c.store} (${c.location})`;
+        document.getElementById('vmodal-metric').innerText = c.metric;
+        document.getElementById('vmodal-submetric').innerText = c.submetric;
+
+        const modal = document.getElementById('video-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        isVideoPlaying = true;
+        document.getElementById('play-indicator').classList.add('hidden');
+
+        progressVal = 10;
+        clearInterval(progressTimer);
+        progressTimer = setInterval(() => {
+          if (isVideoPlaying) {
+            progressVal = progressVal >= 100 ? 0 : progressVal + 2;
+            document.getElementById('video-progress').style.width = `${progressVal}%`;
+          }
+        }, 350);
+      }
+
+      function closeVideoModal() {
+        const modal = document.getElementById('video-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        clearInterval(progressTimer);
+      }
+
+      function togglePlay() {
+        isVideoPlaying = !isVideoPlaying;
+        const ind = document.getElementById('play-indicator');
+        if (isVideoPlaying) {
+          ind.classList.add('hidden');
+        } else {
+          ind.classList.remove('hidden');
+        }
+      }
+
+      function toggleLike() {
+        isVideoLiked = !isVideoLiked;
+        const icon = document.getElementById('vmodal-like-icon');
+        const count = document.getElementById('vmodal-like-count');
+        if (isVideoLiked) {
+          videoLikeCount += 1;
+          icon.setAttribute('fill', '#f43f5e');
+          icon.setAttribute('stroke', '#f43f5e');
+        } else {
+          videoLikeCount -= 1;
+          icon.setAttribute('fill', 'none');
+          icon.setAttribute('stroke', 'currentColor');
+        }
+        count.innerText = videoLikeCount.toLocaleString();
+      }
+
+      function toggleMute() {
+        const btn = document.getElementById('mute-btn');
+        btn.classList.toggle('text-rose-400');
+      }
+
+      // 6. Application Modal
+      function openApplyModal(type = 'senior') {
+        const modal = document.getElementById('apply-modal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.getElementById('modal-success').classList.add('hidden');
+        document.getElementById('modal-form-container').classList.remove('hidden');
+        setModalApplicantType(type);
+      }
+
+      function closeApplyModal() {
+        const modal = document.getElementById('apply-modal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+
+      function setModalApplicantType(type) {
+        modalApplicantType = type;
+        const seniorTab = document.getElementById('modal-tab-senior');
+        const storeTab = document.getElementById('modal-tab-store');
+        const title = document.getElementById('modal-title');
+        const extraLabel = document.getElementById('modal-extra-label');
+        const extraInput = document.getElementById('modal-extra');
+        const submitText = document.getElementById('modal-submit-text');
+
+        if (type === 'senior') {
+          seniorTab.className = 'py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-amber-400 text-slate-950 shadow-sm';
+          storeTab.className = 'py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all text-slate-400 hover:text-white';
+          title.innerText = '시니어 1기 크리에이터 지원서';
+          extraLabel.innerText = '희망 거주 지역 / 연령대';
+          extraInput.placeholder = '예: 일산동구 정발산동 / 60대';
+          submitText.innerText = '1기 지원서 제출하기';
+        } else {
+          seniorTab.className = 'py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all text-slate-400 hover:text-white';
+          storeTab.className = 'py-2 px-3 rounded-lg text-xs font-semibold flex items-center justify-center gap-1.5 transition-all bg-blue-600 text-white shadow-sm';
+          title.innerText = '소상공인 숏폼 마케팅 지원 신청서';
+          extraLabel.innerText = '매장 상호명 / 취급 업종';
+          extraInput.placeholder = '예: 밤리단길 감성카페 / 베이커리';
+          submitText.innerText = '시범 매칭 무료 신청';
+        }
+      }
+
+      function handleModalSubmit(e) {
+        e.preventDefault();
+        const btn = document.getElementById('modal-submit-btn');
+        btn.disabled = true;
+        btn.innerText = '접수 처리 중...';
+
+        setTimeout(() => {
+          btn.disabled = false;
+          btn.innerHTML = `
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            <span>제출 완료</span>
+          `;
+          document.getElementById('modal-form-container').classList.add('hidden');
+          document.getElementById('modal-success').classList.remove('hidden');
+        }, 500);
+      }
+
+      // 7. Contact Form Handler
+      function setContactType(type) {
+        contactApplicantType = type;
+        const seniorBtn = document.getElementById('contact-type-senior');
+        const storeBtn = document.getElementById('contact-type-store');
+
+        if (type === 'senior') {
+          seniorBtn.className = 'py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer flex items-center justify-center gap-2 bg-amber-400 text-slate-950 border-amber-400 font-bold shadow-md shadow-amber-500/20';
+          storeBtn.className = 'py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer flex items-center justify-center gap-2 bg-slate-800/80 text-slate-300 border-slate-700 hover:border-slate-600';
+        } else {
+          seniorBtn.className = 'py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer flex items-center justify-center gap-2 bg-slate-800/80 text-slate-300 border-slate-700 hover:border-slate-600';
+          storeBtn.className = 'py-3 px-4 rounded-xl text-xs sm:text-sm font-semibold border transition-all cursor-pointer flex items-center justify-center gap-2 bg-blue-600 text-white border-blue-500 font-bold shadow-md shadow-blue-600/30';
+        }
+      }
+
+      function handleContactSubmit(e) {
+        e.preventDefault();
+        const form = document.getElementById('contact-form');
+        const success = document.getElementById('form-success');
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      }
+
+      function resetContactForm() {
+        document.getElementById('contact-form').reset();
+        document.getElementById('contact-form').classList.remove('hidden');
+        document.getElementById('form-success').classList.add('hidden');
+      }
+
+      // 8. Clipboard Copy Helper
+      function copyText(str, btn) {
+        navigator.clipboard.writeText(str).then(() => {
+          const originalHTML = btn.innerHTML;
+          btn.innerHTML = `<span class="text-emerald-400 font-bold">복사됨</span>`;
+          setTimeout(() => {
+            btn.innerHTML = originalHTML;
+          }, 1500);
+        });
+      }
+    </script>
+  </body>
+</html>
